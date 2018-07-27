@@ -9,7 +9,8 @@
     "build": "npm run clean && cross-env NODE_ENV=production webpack --progress --color --config ./build/webpack.build.config.js",
     "test": "npm run clean && cross-env NODE_ENV=production webpack --progress --color --config ./build/webpack.test.config.js",
     "lint": "eslint --ext .js --ext .vue src/",
-    "fixed": "eslint --fix --ext .js,.vue src/"
+    "fixed": "eslint --fix --ext .js,.vue src/",
+    "precommit": "npm run lint"
   },
   "author": "Fq",
   "license": "ISC",

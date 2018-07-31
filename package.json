@@ -1,7 +1,7 @@
 {
-  "name": "the_project_name",
-  "version": "0.0.1",
-  "description": "",
+  "name": "{{name}}",
+  "version": "{{version}}",
+  "description": "{{description}}",
   "main": "./src/index.js",
   "scripts": {
     "clean": "rimraf ./dist",
@@ -9,10 +9,9 @@
     "build": "npm run clean && cross-env NODE_ENV=production webpack --progress --color --config ./build/webpack.build.config.js",
     "test": "npm run clean && cross-env NODE_ENV=production webpack --progress --color --config ./build/webpack.test.config.js",
     "lint": "eslint --ext .js --ext .vue src/",
-    "fixed": "eslint --fix --ext .js,.vue src/",
-    "precommit": "npm run lint"
+    "fixed": "eslint --fix --ext .js,.vue src/"
   },
-  "author": "Fq",
+  "author": "{{author}}",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^8.3.0",
